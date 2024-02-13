@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>
+      Registration | BooksCorner - Your Online Literary Destination |
+      BooksCorner.Com
+    </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-ctn">
+      <div class="cover-ctn nav-shadow">
+        <div class="nav-ctn">
+          <nav>
+            <h2 class="logo-heading">
+              <div class="logo-heading-style">B</div>
+              ooksCorner
+            </h2>
+            <div>
+              <a href="/index.html" class="res-btn btn">Home</a>
+              <a href="/store.html" class="res-btn btn">Store</a>
+              <a href="/register.html" class="res-btn btn">Register</a>
+              <a href="/login.html" class="res-btn btn">Log In</a>
+              <a href="/cart.html" class="cart-btn"
+                ><img src="./assets/images/cart-icon.png" alt="cart-icon"
+              /></a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="cover-ctn">
+        <div class="content-ctn">
+          <section class="form-sec">
+            <h2>Register Now</h2>
+            <form action="/store.html">
+              <div class="form-input-ctn">
+                <label class="label">Your Full Name</label>
+                <input
+                  type="text"
+                  class="email"
+                  required
+                  minlength="3"
+                  maxlength="20"
+                />
+              </div>
+              <div class="form-input-ctn">
+                <label class="label">Your Email</label>
+                <input
+                  type="email"
+                  required
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                  autocomplete="email"
+                />
+              </div>
+              <div class="form-input-ctn">
+                <label class="label">Your Password</label>
+                <input
+                  type="password"
+                  required
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"
+                  maxlength="12"
+                />
+              </div>
+              <div class="form-input-ctn">
+                <label class="label">Password Requirements</label>
+                <ul>
+                  <li>Requires at least one digit.</li>
+                  <li>
+                    Requires at least one lowercase letter & one uppercase
+                    letter.
+                  </li>
+                  <li>Requires at least one special character.</li>
+                  <li>Requires at least one alphanumeric character.</li>
+                  <li>Ensures a minimum length of 8 characters.</li>
+                </ul>
+              </div>
+              <div class="form-input-ctn">
+                <input type="submit" value="Register Now" class="submit-btn" />
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+      <div class="cover-ctn">
+        <div class="footer-ctn">
+          <div>
+            <footer>
+              <p>&copy;2024 All Rights Reserved. BooksCorner.Com</p>
+              <div>
+                <img
+                  src="./assets/images/instagram-icon.png"
+                  alt="instagram-icon"
+                />
+                <img
+                  src="./assets/images/facebook-icon.png"
+                  alt="facebook-icon"
+                />
+                <img src="./assets/images/x-icon.png" alt="x-icon" />
+                <a href="/about-us.html" class="btn">About Us</a>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
